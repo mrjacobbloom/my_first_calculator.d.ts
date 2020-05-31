@@ -1,4 +1,8 @@
-Finally, you can do math in TypeScript! Works with numbers 0-50:
+Finally, you can do math in the TypeScript type system!
+
+A lot of people wanted this: https://github.com/microsoft/TypeScript/issues/26382 https://github.com/microsoft/TypeScript/issues/15645 https://github.com/microsoft/TypeScript/issues/15794
+
+Works with numbers 0-50:
 
 ```typescript
 type eight = MyFirstCalculator<3, '+', 5>;
