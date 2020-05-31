@@ -7,7 +7,7 @@ const fs = require('fs');
 const maxNumber = 50;
 
 /**
- * An operation type-literal token, and how to do it
+ * An operation type-literal token, and a function that does said operation
  * @typedef {{ token: string; exec: (a: number, b: number) => number | string }} Operation
  */
 
