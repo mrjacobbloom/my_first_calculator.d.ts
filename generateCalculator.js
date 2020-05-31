@@ -26,7 +26,9 @@ const preamble = `/*
 * Welcome to this calculator!
 * It can add, subtract, multiply and divide whole numbers from 0 to ${maxNumber}
 * Use it like this: type myNumber = MyFirstCalculator<3, '+', 5>;
-*/`;
+*/
+
+// todo: submit to DefinitelyTyped`;
 
 const allowedNumbers = [];
 for (let i = 0; i <= maxNumber; i++) allowedNumbers.push(i);
@@ -76,6 +78,7 @@ ${renderedNum1s}
 const renderedOperations = operations.map(renderOperation).join('\n');
 
 let out = `${preamble}
+
 type MyFirstCalculator<
   Num1 extends ${renderedAllowedNumbers},
   Operation extends ${renderedAllowedOperations},
